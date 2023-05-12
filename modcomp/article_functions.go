@@ -20,3 +20,13 @@ func analyticsFunction1(t float64, y0 float64, y1 float64) []float64 {
 
 	return []float64{xt, yt}
 }
+
+func equationsSystem2(t float64, y0 float64, y1 float64) []float64 {
+	Ut := y0
+	Vt := y1
+
+	dUdt := 1195*Ut - 1995*Vt
+	dVdt := 1197*Ut - 1997*Vt
+
+	return []float64{dUdt, dVdt}
+}

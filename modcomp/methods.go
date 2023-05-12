@@ -27,7 +27,7 @@ func eullerMethod(allX []float64, h float64, initialY0 float64, initialY1 float6
 		x := allX[i]
 		y0 := allYEuller0[i]
 		y1 := allYEuller1[i]
-		k := equationsSystem1(x, y0, y1)
+		k := equationsSystem2(x, y0, y1)
 		allYEuller0 = append(allYEuller0, h*k[0]+allYEuller0[i])
 		allYEuller1 = append(allYEuller1, h*k[1]+allYEuller1[i])
 	}
